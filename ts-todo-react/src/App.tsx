@@ -12,8 +12,6 @@ const App: React.FC = () => {
   }, [])
 
   const fetchTodos = (): void => {
-    console.log('------->', getTodos())
-
     getTodos()
       .then(({ data: { todos } }: ITodo[] | any) => setTodos(todos))
       .catch((err: Error) => console.log(err))

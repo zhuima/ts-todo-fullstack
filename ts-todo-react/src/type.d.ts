@@ -7,13 +7,13 @@ interface ITodo {
   updatedAt?: Date
 }
 
-interface TodoProps {
+type TodoProps = {
   todo: ITodo
 }
 
 type ApiDataType = {
   message: string
   status: string
-  data: ITodo[]
+  todos: ITodo[]
   todo?: ITodo
 }

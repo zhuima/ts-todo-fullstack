@@ -11,6 +11,7 @@ DBConnect()
 
 const app: Express = express()
 app.use(cors())
+app.disable('etag')
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
